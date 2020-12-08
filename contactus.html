@@ -1,0 +1,179 @@
+-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  % Author:  Jessica Lai
+  % Creation Date:    11/15/2020
+  % Last Modified Date:    12/7/2020
+  % Course:  ISOM215 Mobile Application Development
+  % Site:    https://wlai3ISOM215.github.io
+  % Description: For my project, I want to do a website that related to community services. The name of the community is Family Care Office at Belmont Community Center (BCC) which is planning to start an in-home child-care service to operate as a fundraiser for the community's upcoming projects. 
+  % Page Name: index.html
+  %               
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!doctype html>
+<html lang="en">
+<head>
+<title>Belmont Community Center</title>
+<!-- META TAGE -->
+<meta charset="utf-8">
+  <meta name="author" content="Jessica Lai">
+  <meta name="description" content="Introduction about BCC">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Black border (no margin above or below)*/
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+body {
+  margin: 0;
+  bgcolor: #B0E0E6;
+}
+
+/* Style the header and footer */
+.header {
+  background-color: #B0E0E6;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #ffffed;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffed;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #B0E0E6;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<!-- Google Translate Javascript Widget -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1000);
+});
+</script>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</head>
+<body style="background-color:#B0E0E6">
+<div style="text-align:center" id="google_translate_element"></div>	
+<!-- BCC Logo -->
+<div class="header">
+<div {border-color: black;}>
+<img src="bcc logo.jpg" width="20%" height="20%">
+</div>
+</div>
+<hr>
+<!-- Menu Navigation -->
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+    <a href="grograms.html">Programs</a>
+    <a href="facilities.html">Facilities</a>
+  <a href="contactus.html">Contact Us</a>
+  <a href="covid19announcement.html">Covid-19 Announcement</a>
+</div>
+<!-- Google Translate --> 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<br>
+ <div style="margin-left: 10px;margin-right: 5px; color:black;font-size:22px">
+Please feel free to write to the Belmont Community Center at the following:
+ </div>
+<div class="row">
+    <h2>Contact Us</h2>
+  <form method="post">
+  <label>Name: </label>
+  <input id="buyer_name" type="text" size="45"><br>
+   <br> <label>Email Address: </label>
+  <input id="email_address" type="email" required size="45"><br>
+    <br>  <label>Contact Notes: </label>
+  <textarea id="mytextarea"  name="notes" rows = "3" cols ="100" maxlength="300">
+Please write down what you want to tell us here.
+</textarea>
+<br>  
+  <p><input style="margin-left: 114px" type="button" src="email3.png" value="Send Email" onclick="sendEmail('wlai3@su.suffolk.edu')"/></p>
+	    <br />
+	<!-- Auto width -->
+	<!--
+<button class="btn" src="email3.png" alt="email" onclick="sendEmail()">Email Games U Want to Buy</button>
+<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Xbox Games For Sale</button>
+-->  
+
+<div style="text-align: left;color:black;font-size:15px"><strong>We can also be reached via the following phone number: (402) 477-8854</strong></div>
+
+<div style="text-align: left;color:black;font-size:15px"><strong>You may fax us using the number: (402) 477-8855</strong></div>
+
+ </div>
+ </form>
+ 
+<div class="footer"> Site Created by Jessica Lai <a href="mailto:wlai3ISOM215@gmail.com?Subject=ADPR297%20Site%20Feedback" target="_top">wlai3ISOM215@gmail.com</a> 
+</div>
+</body>
+</html>
