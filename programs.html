@@ -1,0 +1,203 @@
+-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  % Author:  Jessica Lai
+  % Creation Date:    11/15/2020
+  % Last Modified Date:    12/7/2020
+  % Course:  ISOM215 Mobile Application Development
+  % Site:    https://wlai3ISOM215.github.io
+  % Description: For my project, I want to do a website that related to community services. The name of the community is Family Care Office at Belmont Community Center (BCC) which is planning to start an in-home child-care service to operate as a fundraiser for the community's upcoming projects. 
+  % Page Name: index.html
+  %               
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!doctype html>
+<html lang="en">
+<head>
+<title>Belmont Community Center</title>
+<!-- META TAGE -->
+<meta charset="utf-8">
+  <meta name="author" content="Jessica Lai">
+  <meta name="description" content="Introduction about BCC">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Black border (no margin above or below)*/
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
+}
+
+body {
+  margin: 0;
+  bgcolor: #B0E0E6;
+}
+
+/* Style the header and footer */
+.header {
+  background-color: #B0E0E6;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #ffffed;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffed;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #B0E0E6;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<!-- Google Translate Javascript Widget -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1000);
+});
+</script>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</head>
+<body style="background-color:#B0E0E6">
+<div style="text-align:center" id="google_translate_element"></div>	
+<!-- BCC Logo -->
+<div class="header">
+<div {border-color: black;}>
+<img src="bcc logo.jpg" width="20%" height="20%">
+</div>
+</div>
+<hr>
+<!-- Menu Navigation -->
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+    <a href="grograms.html">Programs</a>
+    <a href="directions.html">Directions</a>
+  <a href="contactus.html">Contact Us</a>
+  <a href="covid19announcement.html">Covid-19 Announcement</a>
+</div>
+<!-- Google Translate --> 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<hr>
+<br>
+
+<!-- Slideshow --> 
+<div class="center"style="max-width:350px">
+  <img class="mySlides" src="program1.jpg" style="height:224px; width:300px">
+  <img class="mySlides" src="program2.jpg" style="height:224px; width:300px">
+  <img class="mySlides" src="program3.jpg" style="height:224px; width:300px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script> <br>
+<div style="text-align: center;color:maroon;font-size:25px"><strong>Summer Programs</strong></div>
+<div style="margin-left: 20px;margin-right:20px;">
+<p>THE FREE BREAKFAST AND LUNCH PROGRAM WILL BE  PROVIDED THIS SUMMER THRU THE FOOD BANK.  AFTERNOON SNACKS ARE PROVIDED DAILY FOR OUR SUMMER PROGRAM. </p>
+
+<p>The Belmont Community Center has NO SAY in what meals are served. BCC is simply a site that provides this service.  WE HAVE NO CONTROL OVER WHAT IS SERVED.</p>
+
+<p>Your child is not required to eat the free breakfast or lunch. If they choose to not eat the free meals they will need to bring in their own breakfast/lunch on those days. If they bring in food that needs to be warmed up, we can do that for them.</p>
+
+<p>The Belmont Community Center Summer Program is a licensed child care program providing a variety of quality experiences  within the child care setting. The morning is a constantly changing variety  of activities exploring a weekly theme. The afternoon includes games, crafts,  swimming and supervised free play as we re-create the old neighborhood play  group. Our goal is to provide organized, supervised activities that promote  positive interactions with peers and the development of physical, social  and creative skills in the participants.</p>
+
+<div style="text-align: center;color:maroon;font-size:25px"><strong>K-6 School Programs</strong></div>
+<div style="margin-left: 0px;margin-right:0px;">
+<p>The Belmont Community Center Before and After School Program is a licensed child care program offering a variety of quality experiences. Each day provides choices of indoor or outdoor games, crafts, and supervised free play. Also available are a homework club, computer games, theme activities, occasional movies, and trips to the park.</p>
+
+<p>Our goal is to provide organized, supervised activities that offer the participants an opportunity to develop their physical, creative, and social skills while learning cooperation and decision making skills.</p>
+
+<div style="text-align: center;color:maroon;font-size:25px"><strong>Preschool Programs</strong></div>
+<div style="margin-left: 0px;margin-right:0px;">
+<p>The Belmont Community Center Preschool is a developmental program reflecting current preschool educational philosophy. It is designed to enhance and enrich the social, emotional, intellectual and physical development of 3, 4, and 5 year olds. We provide an environment which stimulates the children’s natural curiosity as they learn through play and interaction with each other and with adults. The goals of the program are for each child to:</p>
+
+<p>1. Have a positive self concept</p>
+<p>2. Begin to relate to children and adults and to deal with their emotions</p>
+<p>3. Respect the rights of others</p>
+<p>4. Expand their concepts and ideas about the world</p>
+<p>5. Use language to communicate with others</p>
+<p>6. Express themselves through language, music, art, dramatic play, and creative movement</p>
+<p>7. Be curious and want to learn</p>
+
+<br>
+<div class="footer"> Site Created by Jessica Lai <a href="mailto:wlai3ISOM215@gmail.com?Subject=ADPR297%20Site%20Feedback" target="_top">wlai3ISOM215@gmail.com</a> 
+</div>
+</body>
+</html>
