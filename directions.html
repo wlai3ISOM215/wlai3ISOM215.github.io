@@ -1,53 +1,154 @@
-<!DOCTYPE html>
+-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  % Author:  Jessica Lai
+  % Creation Date:    11/15/2020
+  % Last Modified Date:    12/7/2020
+  % Course:  ISOM215 Mobile Application Development
+  % Site:    https://wlai3ISOM215.github.io
+  % Description: For my project, I want to do a website that related to community services. The name of the community is Family Care Office at Belmont Community Center (BCC) which is planning to start an in-home child-care service to operate as a fundraiser for the community's upcoming projects. 
+  % Page Name: index.html
+  %               
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!doctype html>
 <html lang="en">
 <head>
-<title>DirectionLighthouse Bistro</title>
+<title>Belmont Community Center</title>
+<!-- META TAGE -->
 <meta charset="utf-8">
+  <meta name="author" content="Jessica Lai">
+  <meta name="description" content="Introduction about BCC">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS -->
 <style>
-body { background-image: url(background.jpg);
-       font-family: "Comic Sans MS", cursive, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-h1 { background-image: url(lighthouselogo.jpg);
-     background-color: #9DB3DC;
-	background-repeat: no-repeat;
-	height: 100px; font-size: 3em;
-	padding-left: 150px; padding-top: 30px;
-	border-radius: 15px;
-	margin-top: 0;
-	text-shadow: 3px 3px 3px #676767;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-h2 { color: #000033; 
-     font-family: arial, sans-serif;
-	 text-shadow: 1px 1px 0 #ccc;
+/* Black border (no margin above or below)*/
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border: 2px solid black;
+  border-radius: 5px
 }
-footer { font-size: .80em;
-          font-style: italic;
+
+body {
+  margin: 0;
+  bgcolor: #B0E0E6;
 }
-#container { background-color: #FFFFFF;
-			 padding: 2em;
-			 margin-left: auto;
-             margin-right: auto;
-			 background-color: #FFFFFF;
-			 padding: 2em;
-             width: 80%;
-             min-width: 800px;
-              box-shadow: 5px 5px 5px #1e1e1e;
-			 }
+
+/* Style the header and footer */
+.header {
+  background-color: #B0E0E6;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #ffffed;
+  text-align: center;
+  padding: 5px;
+} 
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffed;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #B0E0E6;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 </style>
+<!-- Google Translate Javascript Widget -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1000);
+});
+</script>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 </head>
-<body>
-<div id="container">
-<header>
-<h1>Lighthouse Bistro</h1>
-</header>
-<nav><a href="https://wlai3ISOM215.github.io/index.html">Home</a> &nbsp;<a href="https://wlai3ISOM215.github.io/menu.html">Menu</a> &nbsp;<a href="https://wlai3ISOM215.github.io/directions.html">Directions</a> &nbsp;<a href="https://wlai3ISOM215.github.io/contact.html">Contact</a>
-</nav>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42000.93082574292!2d-81.29959487842213!3d40.522407172182405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8836eeb52458057b%3A0x3429158e66f1143e!2sAtwood%20Lighthouse%20Bistro!5e0!3m2!1sen!2sus!4v1602796384450!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-<footer>
-    Copyright &copy; 2020 Jessica Lai
-</footer>
+<body style="background-color:#B0E0E6">
+<div style="text-align:center" id="google_translate_element"></div>	
+<!-- BCC Logo -->
+<div class="header">
+<div {border-color: black;}>
+<img src="bcc logo.jpg" width="20%" height="20%">
+</div>
+</div>
+<hr>
+<!-- Menu Navigation -->
+<div class="topnav">
+  <a href="about.html">About</a>
+    <a href="grograms.html">Programs</a>
+    <a href="directions.html">Directions</a>
+  <a href="contactus.html">Contact Us</a>
+  <a href="covid19announcement.html">Covid-19 Announcement</a>
+</div>
+<!-- Google Translate --> 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<hr>
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.2073376516946!2d-96.706044284387!3d40.845371437381836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8796b92ad6ffe835%3A0x37a4308c836e9f86!2sBelmont%20Community%20Center!5e0!3m2!1sen!2sus!4v1607392077497!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+<div style="text-align: left;color:black;font-size:15px"><strong>The Belmont Community Center is located just west of 14th street and north of Cornhusker Highway.</strong></div>
+
+<br>
+<div class="footer"> Site Created by Jessica Lai <a href="mailto:wlai3ISOM215@gmail.com?Subject=ADPR297%20Site%20Feedback" target="_top">wlai3ISOM215@gmail.com</a> 
 </div>
 </body>
 </html>
